@@ -15,6 +15,7 @@ import AllAuthors from "./components/pages/AllAuthors";
 import { Context } from "./main";
 import axios from "axios";
 import UpdateBlog from "./components/pages/UpdateBlog";
+import MainBlog from "./components/pages/MainBlog";
 
 const App = () => {
   const { setUser, isAuthenticated, setIsAuthenticated, user, setBlogs } =
@@ -53,19 +54,23 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/blogs" element={<Blogs />} />
-          <Route path="/blog/:id" element={<SingleBlog />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/authors" element={<AllAuthors />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/blog/update/:id" element={<UpdateBlog />} />
-        </Routes>
-        <Footer />
+        <div className="badacontainer">
+          <div className="chhotacontainer">
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/blogs" element={<Blogs />} />
+              <Route path="/blog/:id" element={<MainBlog />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/authors" element={<AllAuthors />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/blog/update/:id" element={<UpdateBlog />} />
+            </Routes>
+            <Footer />
+          </div>
+        </div>
         <Toaster />
       </BrowserRouter>
     </>

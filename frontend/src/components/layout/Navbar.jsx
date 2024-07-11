@@ -13,11 +13,12 @@ const Navbar = () => {
   const handleNavbar = () => {
     setShow(!show);
   };
-  
+
   const isDashboard = useLocation("http://localhost:5173/dashboard");
-  
-  const { mode, setMode, isAuthenticated, user, setIsAuthenticated } = useContext(Context);
-  
+
+  const { mode, setMode, isAuthenticated, user, setIsAuthenticated } =
+    useContext(Context);
+
   const navigateTo = useNavigate();
   const handleLogout = async (e) => {
     e.preventDefault();
@@ -46,7 +47,7 @@ const Navbar = () => {
     >
       <nav>
         <div className="logo">
-          Zeta<span>Blog</span>
+          Project<span>Nest</span>
         </div>
         <div className={show ? "links show" : "links"}>
           <ul>
@@ -72,7 +73,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="btns">
-            <button
+            {/* <button
               onClick={() =>
                 mode === "light" ? setMode("dark") : setMode("light")
               }
@@ -85,7 +86,7 @@ const Navbar = () => {
               ) : (
                 <MdDarkMode className="dark-icon" />
               )}
-            </button>
+            </button> */}
             {isAuthenticated && user.role === "Author" ? (
               <Link
                 to={"/dashboard"}

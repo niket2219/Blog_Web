@@ -1,0 +1,147 @@
+.Blogwalacontainer {
+  width: 100%;
+}
+.Blogwalacontainer > a {
+  text-decoration: none;
+}
+.Blogwalacontainer > h1 {
+  font-size: 0.9rem;
+}
+.Blogwalacontainer > p {
+  font-size: 1.2rem;
+}
+
+.singleblogcontainer {
+  width: 80%;
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.singlebloghero {
+  max-width: 90rem;
+  height: 20rem;
+  background: url(../../../assets/767.jpg) no-repeat center center / cover;
+  margin: auto;
+}
+main {
+  width: 84%;
+  max-width: 80rem;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1.1rem;
+  margin-top: -5rem;
+  margin-bottom: 2rem;
+}
+main h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+main .singleblog-profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+main .singleblog-profile-container .singleblog-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main
+  .singleblog-profile-container
+  .singleblog-profile
+  .singleblog-img-container {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: no-repeat center center / cover;
+  border-radius: 0.2rem;
+}
+main .singleblog-profile-container .singleblog-profile .singleblog-text {
+  margin: 0 0.5rem;
+  color: #5b5963;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.singleblog-profile .singleblog-text h1 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.singleblog-profile .singleblog-text p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.btn {
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 0.6rem;
+  padding: 0.3rem 1rem;
+  background-color: #fd735a;
+  border-radius: 0.2rem;
+}
+main .singleblog-content p {
+  color: #5b5963;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+main .singleblog-content h4 {
+  font-size: 1rem;
+  font-weight: 650;
+  color: #5b5963;
+  margin: 1.5rem auto;
+}
+main .singleblog-content .singleblog-content-img-container {
+  width: 100%;
+  height: 24rem;
+  background-image: no-repeat center center / cover;
+}
+blockquote {
+  font-size: 0.9rem;
+  padding: 0.6rem 1.8rem;
+  line-height: 1rem;
+  font-weight: 500;
+  box-shadow: inset 0.5rem 0 0 #fd735a;
+  background-color: #f5f5f5;
+  color: #444445;
+}
+.singleblog-tags {
+  display: flex;
+  align-items: center;
+}
+.singleblog-tags p {
+  font-size: 0.6rem;
+  text-transform: capitalize;
+}
+.singleblog-tags a {
+  display: inline-block;
+  padding: 0.3rem 1.5rem;
+  background-color: #f5f5f5;
+  color: #5b5963;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: -1;
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 567px) {
+  .singleblog-article-heading h5 {
+    font-size: 3rem;
+  }
+  .singleblogcontainer {
+    width: 100%;
+  }
+  .chhotacontainer {
+    width: 100%;
+  }
+}
